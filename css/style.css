@@ -1,0 +1,420 @@
+/*-------------------------
+BASE CSS
+--------------------------*/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background: #F1F1F1;
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: 5.2em;
+	margin-bottom: 6px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+	font-family: "Futura Std Light", Sans-Serif, Helvetica, Arial;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	
+}
+
+p {
+	text-align: justify;
+	font-family: "Futura Std Light", Sans-Serif, Helvetica, Arial;
+	color: #444444;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*-------------------------
+FONT CROSS BROWSER COMP.
+--------------------------*/
+
+@font-face {
+    font-family: 'Futura Std Light';
+    src: url('futurastd-light.eot');
+    src: url('futurastd-light.eot') format('embedded-opentype'),
+       url('futurastd-light.woff') format('woff'),
+       url('futurastd-light.ttf') format('truetype');                       
+}
+
+h2, p {
+  font-family: 'Futura Std Light', Sans-Serif, Helvetica, Arial;       
+}
+
+
+
+
+/*-------------------------
+LAYOUT
+--------------------------*/
+
+.container {
+	width: 70%;
+	margin: auto;
+}
+
+
+
+/*-------------------------
+PROFILE TITLE
+--------------------------*/
+
+
+.profile-title {
+	background-image: url(../images/profile-background.png);
+}
+
+
+
+.name-contact {
+	max-width: 760px;
+	margin: auto;
+	padding: 190px 0 90px 0;
+	color: white;
+	text-transform: uppercase;
+}
+
+.arrow img {
+	max-width: 100%;
+}
+
+
+.arrow img:hover {
+	cursor: pointer;
+}
+
+
+.mob-number {
+	float: left;
+}
+
+.email {
+	float: left;
+	margin-left: 79px;
+}
+
+.mob-number, .email, .linkedin a, .twitter a, .github a {
+	font-size: 2.7em;
+	color: white;
+	margin-bottom: 6px;
+}
+
+
+.clear {
+	clear: both;
+}
+
+.github, .linkedin, .twitter {
+	float: left;
+	letter-spacing: 1px;
+	
+}
+
+
+.github a, .linkedin a, .twitter a {
+    -o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+    transition:.5s;
+}
+
+a:hover {
+	cursor: pointer;
+	color: yellow;
+}
+
+
+.linkedin a, .twitter a {
+	margin-left: 35px;
+}
+
+.github {
+	margin-left: 155px;
+}
+
+.arrow  {
+	padding-bottom: 60px;
+	width: 55px;
+	margin: auto;
+}
+
+
+.ambition a, .contact-link a {
+	color: #378792;
+	font-weight: bold;
+}
+
+.ambition a:hover, .contact-link a:hover {
+	color: orange;
+}
+
+
+/*----------------------------
+BACKGROUND AND AMBITION SECTION
+------------------------------*/
+
+
+
+.ambition, .skills {
+	margin-top: 100px;
+	line-height: 2;
+	font-size: 22px;
+	border-bottom: 2px dotted #378792;
+}
+
+
+
+
+.ambition p, .primary {
+	margin-bottom: 60px;
+}
+
+
+
+.skills {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.skills span {
+	margin-right: 20px;
+	font-size: 26px;
+}
+
+
+
+.contact-link {
+	border-bottom: 2px dotted #378792;
+	padding: 60px 0 60px 0;
+	font-size: 22px;
+	margin-bottom: 60px;
+}
+
+.contact-link p {
+	text-align: center;
+}
+
+#copyright {
+	float: right;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+
+  MEDIA QUERIES
+
+------------------------------------------------------------------------------------------------------------*/
+
+
+/* SMALL DESKTOP */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1089px) {
+
+
+	h1 {
+		font-size: 3.1em;
+		margin-bottom: 6px;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	.container {
+		width: 59.34%;
+	}
+	 
+
+	.mob-number, .email, .linkedin a, .twitter a, .github a {
+		font-size: 1.6em;
+		color: white;
+		margin-bottom: 6px;
+	}
+
+	.email {
+		margin-left: 51px;
+	}
+
+
+	.github {
+	    margin-left: 71px;
+	}
+
+
+	.name-contact {
+		max-width: 450px;
+	}
+
+	.arrow  {
+		width: 30px;
+		
+	}
+
+}
+
+
+/* TABLET */
+
+
+@media only screen and (min-width: 488px) and (max-width: 767px) {
+
+
+	h1 {
+		font-size: 2em;
+		margin-bottom: 6px;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: .8em;
+	}
+
+
+	p {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 60.34%;
+	}
+	 
+
+	.mob-number, .email, .linkedin a, .twitter a, .github a {
+		font-size: 1.5em;
+		color: white;
+		margin-bottom: 6px;
+		text-align: center;
+	}
+
+	.email {
+		float: none;
+		margin-left: 0;
+	}
+
+	.mob-number {
+		float: none;
+	}
+
+
+	.github {
+	   margin-left: 48px;
+	}
+
+
+	.name-contact {
+		max-width: 370px;
+	}
+
+	.arrow  {
+		width: 30px;
+		
+	}
+
+	.github, .linkedin, .twitter {
+		float: none;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.linkedin a, .twitter a {
+		margin-left: 0;
+	}
+
+	.name-contact {
+		padding: 110px 0 70px 0;
+	}
+
+
+}
+
+
+/* MOBILE */
+
+
+@media only screen and (min-width: 0px) and (max-width: 487px) {
+
+	h1 {
+		font-size: 1.5em;
+		margin-bottom: 6px;
+		text-align: center;
+	}
+
+
+	h2 {
+		font-size: .8em;
+	}
+
+
+	p {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 88.34%;
+	}
+	 
+
+	.mob-number, .email, .linkedin a, .twitter a, .github a {
+		font-size: 1.2em;
+		color: white;
+		margin-bottom: 6px;
+		text-align: center;
+	}
+
+	.email {
+		float: none;
+		margin-left: 0;
+	}
+
+	.mob-number {
+		float: none;
+	}
+
+
+	.github {
+	    margin-left: 48px;
+	}
+
+
+	.name-contact {
+		max-width: 347px;
+	}
+
+	.arrow  {
+		width: 30px;	
+	}
+
+	.github, .linkedin, .twitter {
+		float: none;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.linkedin a, .twitter a {
+		margin-left: 0;
+	}
+
+	.name-contact {
+		padding: 110px 0 70px 0;
+	}
+
+}
